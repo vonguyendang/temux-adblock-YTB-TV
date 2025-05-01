@@ -56,12 +56,12 @@ run_adblock() {
   # tmux new-session -d -s sponsorblock 'cd ~/iSponsorBlockTV/src && python main.py --port 8081 --proxy'
   tmux new-session -d -s sponsorblock 'cd ~/iSponsorBlockTV/src && python main.py --setup'
   
-  IP=$(ifconfig wlan0 | grep 'inet ' | awk '{print $2}')
+  # IP=$(ifconfig wlan0 | grep 'inet ' | awk '{print $2}')
   
-  echo -e "${GREEN}"
-  echo "================================================"
-  echo "   🚀 iSponsorBlockTV ĐÃ SẴN SÀNG!"
-  echo "================================================"
+  # echo -e "${GREEN}"
+  # echo "================================================"
+  # echo "   🚀 iSponsorBlockTV ĐÃ SẴN SÀNG!"
+  # echo "================================================"
   # echo "  ${YELLOW}Để sử dụng:${GREEN}"
   # echo "  1. Vào Cài đặt WiFi trên Android"
   # echo "  2. Chọn mạng đang dùng → Chỉnh sửa"
@@ -70,7 +70,7 @@ run_adblock() {
   # echo "     • Host: ${CYAN}$IP${GREEN}"
   # echo "     • Port: ${CYAN}8081${GREEN}"
   # echo "================================================"
-  echo -e "${NC}"
+  # echo -e "${NC}"
 
   termux-wake-lock
   # am start -a android.settings.WIFI_SETTINGS 2>/dev/null

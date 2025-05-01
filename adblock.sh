@@ -9,21 +9,21 @@ CYAN='\033[1;36m'
 NC='\033[0m' # No Color
 
 # ------------- KIỂM TRA HỆ THỐNG -------------
-check_system() {
-  echo -e "${CYAN}[•] Kiểm tra hệ thống...${NC}"
+# check_system() {
+#   echo -e "${CYAN}[•] Kiểm tra hệ thống...${NC}"
   
-  # Kiểm tra kết nối Internet
-  if ! ping -c 1 google.com &> /dev/null; then
-    echo -e "${RED}✖ Không có kết nối Internet!${NC}"
-    exit 1
-  fi
+#   # Kiểm tra kết nối Internet
+#   if ! ping -c 1 google.com &> /dev/null; then
+#     echo -e "${RED}✖ Không có kết nối Internet!${NC}"
+#     exit 1
+#   fi
 
-  # Kiểm tra quyền lưu trữ
-  if [ ! -w /sdcard ]; then
-    termux-setup-storage
-    sleep 3
-  fi
-}
+#   # Kiểm tra quyền lưu trữ
+#   if [ ! -w /sdcard ]; then
+#     termux-setup-storage
+#     sleep 3
+#   fi
+# }
 
 # ------------- CÀI ĐẶT THÀNH PHẦN -------------
 install_dependencies() {
@@ -88,7 +88,7 @@ cat << "EOF"
 EOF
 echo -e "${NC}"
 
-check_system
+# check_system
 install_dependencies
 setup_isponsorblock
 run_adblock

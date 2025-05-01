@@ -13,7 +13,7 @@ Tiện ích tự động bỏ qua quảng cáo/sponsor trên YouTube TV, chạy 
 ## 🚀 Cài đặt bằng 1 lệnh duy nhất
 
 ```bash
-pkg update -y && pkg install -y wget && wget --quiet --show-progress -O adblock.sh "https://drive.google.com/uc?id=YOUR_FILE_ID&export=download&confirm=t" && chmod +x adblock.sh && ./adblock.sh
+pkg update -y && pkg install -y wget && wget --quiet --show-progress -O adblock.sh "https://raw.githubusercontent.com/vonguyendang/temux-adblock-YTB-TV/refs/heads/main/adblock.sh" && chmod +x adblock.sh && ./adblock.sh
 ```
 ## 🔧 Cấu hình thủ công
 Cài đặt phụ thuộc:
@@ -26,7 +26,7 @@ pkg install -y python git tmux wget
 Tải script:
 
 ```bash
-wget https://raw.githubusercontent.com/yourrepo/adblock/main/adblock.sh
+wget [raw.githubusercontent.com/vonguyendang/temux-adblock-YTB-TV/refs/heads/main/adblock.sh](https://raw.githubusercontent.com/vonguyendang/temux-adblock-YTB-TV/refs/heads/main/adblock.sh)
 chmod +x adblock.sh
 ```
 

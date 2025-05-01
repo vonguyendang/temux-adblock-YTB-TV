@@ -54,7 +54,7 @@ run_adblock() {
   echo -e "${CYAN}[•] Khởi động iSponsorBlockTV...${NC}"
   
   # tmux new-session -d -s sponsorblock 'cd ~/iSponsorBlockTV/src && python main.py --port 8081 --proxy'
-  tmux new-session -d -s sponsorblock 'cd ~/iSponsorBlockTV/src && python main.py'
+  tmux new-session -d -s sponsorblock 'cd ~/iSponsorBlockTV/src && python main.py --setup'
   
   IP=$(ifconfig wlan0 | grep 'inet ' | awk '{print $2}')
   

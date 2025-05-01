@@ -82,7 +82,7 @@ echo -e "${CYAN}"
 cat << "EOF"
   ___________________________________________________
  /                                                    \
-|   🚀 TIỆN ÍCH BỎ QUẢNG CÁO YOUTUBE - TERMUX EDITION  |
+|  🚀 TIỆN ÍCH BỎ QUẢNG CÁO YOUTUBE - TERMUX EDITION  |
 |         Phiên bản tự động - Thiết kế bởi Dang Vo    |
  \___________________________________________________/
 EOF
